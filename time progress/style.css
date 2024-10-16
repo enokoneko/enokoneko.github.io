@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'Anton';
+  font-style: normal;
+  src: url('src/Anton-Regular.ttf');
+}
+
+:root {
+  --n-numb-per: 30%;
+  --n-bar-per: 30%;
+  --n-numb-per1: calc(max(0%, var(--n-numb-per) - 7%));
+  --n-numb-per2: calc(max(0%, var(--n-numb-per) - 2.34%));
+  --n-numb-per3: calc(min(100%, var(--n-numb-per) + 2.34%));
+  --n-numb-per4: calc(min(100%, var(--n-numb-per) + 7%));
+  font-family: system-ui;
+  font-size: 18px;
+  font-weight: 600;
+/*  font-feature-settings: "tnum";*/
+/*  color: red;*/
+  color: oklch(100% 0 0 / 80%);
+  line-height: 1.5rem;
+}
+
+body {
+/*  background-color: oklch(45% 0 0);*/
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+/*  justify-content: center;*/
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+#p1 {
+  padding-top: 6rlh;
+}
+
+#progress-dom {
+  display: flex;
+  justify-content: center;
+/*  flex-direction: column;*/
+  font-family: 'Anton', system-ui;
+  font-weight: 1000;
+  font-size: 10rem;
+  line-height: 1em;
+  background: linear-gradient(180deg, oklch(100% 0 0 / 0%) var(--n-numb-per1), oklch(100% 0 0 / 22%) var(--n-numb-per2), oklch(100% 0 0 / 78%) var(--n-numb-per3), oklch(100% 0 0 / 100%) var(--n-numb-per4));
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0px 0px 6px oklch(100% 0 0 / 13%);
+/*  align-items: baseline;*/
+}
+
+.l1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block-start: 1em;
+  gap: 0.1lh;
+/*  font-feature-settings: "tnum";*/
+}
+
+#progress-years, #progress-en {
+  font-size: 9px;
+  font-weight: 300;
+  line-height: 1em;
+  color: oklch(100% 0 0 / 50%);
+}
+
+#progress-ybar {
+/*  display: flex;*/
+  width: 10em;
+  height: 0.8em;
+  margin-block: 0.42em;
+  border-radius: 4px;
+/*  background-color: red;*/
+  background:linear-gradient(90deg, oklch(100% 0 0 / 20%) var(--n-bar-per), oklch(100% 0 0 / 80%) var(--n-bar-per));
+  box-shadow: 0px 0px 4.5px 1.5px oklch(100% 0 0 / 26%);
+}

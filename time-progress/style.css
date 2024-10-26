@@ -11,9 +11,9 @@
   --n-numb-per2: calc(max(0%, var(--n-numb-per) - 2.34%));
   --n-numb-per3: calc(min(100%, var(--n-numb-per) + 2.34%));
   --n-numb-per4: calc(min(100%, var(--n-numb-per) + 7%));
-  font-family: system-ui;
+/*  font-family: system-ui;*/
   font-size: 18px;
-  font-weight: 600;
+/*  font-weight: 600;*/
 /*  font-feature-settings: "tnum";*/
 /*  color: red;*/
   color: oklch(100% 0 0 / 80%);
@@ -62,20 +62,26 @@ body {
 /*  font-feature-settings: "tnum";*/
 }
 
-#progress-years, #progress-en {
-  font-size: 9px;
-  font-weight: 300;
-  line-height: 1em;
-  color: oklch(100% 0 0 / 50%);
+#progress-dow {
+  font-family: monospace;
+  font-weight: 600;
 }
 
 #progress-ybar {
 /*  display: flex;*/
   width: 10em;
-  height: 0.8em;
-  margin-block: 0.42em;
+  height: 4px;
+  margin-block: 0.2em;
   border-radius: 4px;
 /*  background-color: red;*/
   background:linear-gradient(90deg, oklch(100% 0 0 / 20%) var(--n-bar-per), oklch(100% 0 0 / 80%) var(--n-bar-per));
   box-shadow: 0px 0px 4.5px 1.5px oklch(100% 0 0 / 26%);
+}
+
+#progress-years {
+  font-family: system-ui;
+  font-size: 9px;
+  font-weight: 300;
+  line-height: 0.7lh;
+  color: oklch(100% 0 0 / 50%);
 }

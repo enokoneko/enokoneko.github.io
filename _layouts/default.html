@@ -7,7 +7,6 @@
 
 {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-    <!-- {% include head-custom.html %} -->
   </head>
   <body>
     <div class="wrapper">
@@ -18,13 +17,22 @@
         {% endif %}
         <p>{{ site.description}}</p>
 
-        {{site.pages}}
-
       </header>
       <section>
 
       {{ content }}
-
+      <hr>
+      <p>site.static_files</p>
+      {{ site.static_files }}
+      <hr>
+      <p>site.pages</p>
+      {{ site.pages }}
+      <hr>
+      <p>site.collections</p>
+      {{ site.collections }}
+      <hr>
+      <p>site.documents</p>
+      {{ site.documents }}
       </section>
       <footer>
         <!-- <p><small>Hosted on GitHub Pages</small></p> -->

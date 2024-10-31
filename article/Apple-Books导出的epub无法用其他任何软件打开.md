@@ -10,7 +10,7 @@
 `‌~/Library/Mobile Documents/iCloud~com~apple~iBooks/Documents`
 
 - 从Apple Books直接导出的epub包含很多xattr属性，用[xattred](https://eclecticlight.co/xattred-sandstrip-xattr-tools/)能看到。
-	./img/241013-065035.png
+	/assets/img/241013-065035.png
 其中`com.apple.quarantine`和`com.apple.macl`是近年来macOS新加的，如果修改xattr属性后还会自动新增`com.apple.provenance`。
 xattred能删掉常规的xattr属性，但这三个属性很不容易去除，它们在系统层面收到保护（SIP）。在网上能搜到很多[相关讨论](https://eclecticlight.co/2020/01/30/quarantine-sip-and-macl-macos-per-file-security-controls/)。
 

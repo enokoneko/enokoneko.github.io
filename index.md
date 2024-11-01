@@ -2,4 +2,5 @@
 layout: home
 title: eno
 ---
-{{ "/page/proj.md" | page.content }}
+{% assign proj_page = site.pages | where: "path", "/page/proj.md" | first %}
+{{ proj_page.content }}

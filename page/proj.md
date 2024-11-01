@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /
 ---
 ### [Carpet-demo](https://carpet-bx6.pages.dev)
 A visual way to help you to connect history thread horizontally and vertically.

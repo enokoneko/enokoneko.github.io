@@ -1,7 +1,7 @@
 @import "rouge-github";
 
 body {
-  background-color: oklch(0.9 0 0);
+  background-color: oklch(0.92 0 0);
   padding:50px;
   font: 14px/1.5 system-ui;
   color:oklch(0.25 0 0);
@@ -36,8 +36,7 @@ a {
 }
 
 a:hover, a:focus {
-  color:oklch(0.65 0.14 237);
-  // font-weight: bold;
+  color:oklch(0.68 0.17 245);
 }
 
 a small {

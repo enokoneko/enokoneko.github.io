@@ -52,7 +52,7 @@ a:hover small {
 }
 
 .wrapper {
-  width:860px;
+  width: fit-content;
   margin:0 auto;
 }
 
@@ -115,7 +115,8 @@ kbd {
 }
 
 header {
-  width:270px;
+  width: fit-content;
+  max-width:20rem;
   float:left;
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
@@ -127,7 +128,7 @@ strong {
 }
 
 section {
-  width:500px;
+  width:36rem;
   float:right;
   padding-bottom:50px;
 }

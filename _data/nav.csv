@@ -1,4 +1,4 @@
 name,path
-article,./article
-proj,./page
-about,./about
+article,./page/article
+proj,./page/proj
+about,./page/about

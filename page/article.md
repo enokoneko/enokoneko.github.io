@@ -1,9 +1,6 @@
 ---
 layout: default
 ---
-# pages
-{{pages}}
-# site.pages
-{% for p in site.pages %}
+{% for p in site.posts %}
 - [{{ p.title }}]({{ p.url | relative_url }})
 {% endfor %}

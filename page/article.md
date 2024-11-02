@@ -2,5 +2,8 @@
 layout: default
 ---
 {% for p in site.posts %}
-	{{p.date | date: "%Y-%m-%d"}} [{{ p.title }}]({{ p.url | relative_url }})
+	<small>{{p.date | date: "%Y-%m-%d"}}</small>
+	<a href="{{ p.url | relative_url }}">
+		{{ p.title }}
+	</a>
 {% endfor %}

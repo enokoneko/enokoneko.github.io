@@ -39,7 +39,7 @@ function dayC() {
   let week = now.getDay();
   let week_zh = weektoKakko(week, 'zh');
   let week_jpkk = weektoKakko(week, 'jpkk');
-  let week_en = now.toLocaleString('en-US', {weekday: 'long'});
+  let week_en = now.toLocaleString('en-US', {weekday: 'short'});
   let month_en = now.toLocaleString('en-US', {month: 'long'});
   let month = (now.getMonth() + 1).toString();
   let year = now.getFullYear();
@@ -58,9 +58,9 @@ function dayC() {
   let doy_per = Math.floor(doy_pass_s / (new Date(year + 1, 0, 1) - year_str) * 100);
   
   $('#progress-dom').text(day);
-  $('#progress-dow').text(month + 'm ' + week_pass + 'w ' + doy_pass + 'd・' + week_zh + '' + week_jpkk);
+  $('#progress-dow').text(month + 'm·' + week_pass + 'w·' + doy_pass + 'd·' + week_en + week_jpkk);
   // $('#progress-en').text(week_en + ', ' + month_en);
-  $('#progress-years').text(year_eto + '・㋿ ' + year_jp + '・民國' + year_tw + '・西暦' + year + ' ' + month_en);
+  $('#progress-years').text(year_eto + '・㋿ ' + year_jp + '・民國' + year_tw + '・西暦' + year + '・' + month_en);
 
   $(':root').css({
     '--n-bar-per': `${doy_per}%`,
